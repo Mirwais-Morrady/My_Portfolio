@@ -17,8 +17,8 @@
         nav {
             position: fixed;
             top: 0;
-            left: 0;
-            width: 100%;
+            left: -20px; /* Moved the navigation bar slightly to the left */
+            width: calc(100% + 20px); /* Adjusted width to accommodate shift */
             background: white;
             display: flex;
             justify-content: space-between;
@@ -60,6 +60,18 @@
             font-weight: bold;
             text-align: center;
             margin-bottom: 20px;
+        }
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
         .social-links {
             display: flex;
@@ -114,6 +126,9 @@
         <h1>Hi,</h1>
         <h1>I'm <span style="color:blue">Mirwais Morrady</span></h1>
         <p>Computing Science Student | Cybersecurity Enthusiast</p>
+        <div class="profile-container">
+            <img class="profile-img" src="https://raw.githubusercontent.com/Mirwais-Morrady/My_Portfolio/main/profile.jpg" alt="Mirwais Morrady">
+        </div>
         <button>Connect</button>
         <div class="social-links">
             <a href="#"><i class="fab fa-linkedin"></i></a>

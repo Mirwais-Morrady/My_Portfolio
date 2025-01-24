@@ -9,114 +9,137 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: url('https://raw.githubusercontent.com/Mirwais-Morrady/My_Portfolio/main/background.jpg') no-repeat center center fixed;
-            background-size: cover;
+            background: #f8f9fa;
             color: black;
+            scroll-behavior: smooth;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
         }
-        .header {
-            position: absolute;
-            top: 20px;
-            left: 20px;
+        nav .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            padding: 5px 10px;
+        }
+        nav ul li a.active {
+            border-bottom: 3px solid blue;
+        }
+        section {
+            padding: 80px 10%;
+            min-height: 100vh;
+        }
+        #home {
             display: flex;
             align-items: center;
+            justify-content: space-between;
+            height: 100vh;
         }
-        .header img {
-            width: 120px;
-            height: 120px;
+        #home .intro {
+            max-width: 50%;
+        }
+        #home h1 {
+            font-size: 36px;
+        }
+        #home img {
+            width: 300px;
             border-radius: 50%;
-            margin-right: 15px;
-        }
-        .header h1 {
-            font-size: 28px;
-            font-weight: bold;
-            font-family: 'Courier New', monospace;
-            text-shadow: 2px 2px 4px gray;
-            transform: perspective(500px) rotateX(10deg);
-        }
-        .about-section {
-            width: 100%;
-            margin: 80px auto 20px auto;
+            background: #007bff;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            text-align: center;
         }
-        .grid-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            justify-content: center;
-            margin-top: 20px;
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            gap: 10px;
         }
-        .section {
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            text-align: center;
-        }
-        .section h2 {
-            border-bottom: 2px solid #00ff99;
-            padding-bottom: 5px;
-        }
-        .contact {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            font-size: 14px;
-            background: rgba(255, 255, 255, 0.8);
+        .contact-form input, .contact-form textarea {
             padding: 10px;
+            border: 1px solid #ccc;
             border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px;
+            background: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="https://raw.githubusercontent.com/Mirwais-Morrady/My_Portfolio/main/profile.jpg" alt="Mirwais Morrady"> 
-        <h1>Mirwais Morrady</h1>
-    </div>
+    <nav>
+        <div class="logo">Mirwais</div>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <div class="container">
-        <div class="about-section">
-            <h2>About Me</h2>
-            <p>
-                I'm a third-year Bachelor of Computing Science student with an option in Security. 
-                My interests include ethical hacking, penetration testing, and analyzing security threats 
-                to develop effective countermeasures. I am passionate about cybersecurity and ensuring 
-                digital assets are well-protected against vulnerabilities.
-            </p>
+    <section id="home">
+        <div class="intro">
+            <h1>Hi, I'm <span style="color:blue">Mirwais Morrady</span></h1>
+            <p>Computing Science Student | Cybersecurity Enthusiast</p>
+            <button>Contact</button>
         </div>
+        <img src="https://raw.githubusercontent.com/Mirwais-Morrady/My_Portfolio/main/profile.jpg" alt="Mirwais Morrady">
+    </section>
 
-        <div class="grid-container">
-            <div class="section">
-                <h2>Resume</h2>
-                <p><a href="your-resume.pdf" target="_blank">Download My Resume</a></p> 
-            </div>
-            <div class="section">
-                <h2>Projects</h2>
-                <p>Coming soon! (You can list your best projects here, with descriptions and GitHub links)</p>
-            </div>
-            <div class="section">
-                <h2>Skills</h2>
-                <p>List your technical skills here (Programming languages, frameworks, tools, etc.).</p>
-            </div>
-            <div class="section">
-                <h2>Work Experience</h2>
-                <p>Include any relevant internships, part-time jobs, or professional experience.</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="contact">
-        <p>Email: <a href="mailto:22jl75@queensu.ca">22jl75@queensu.ca</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn Profile</a></p>
-        <p>GitHub: <a href="https://github.com/your-username" target="_blank">GitHub Profile</a></p>
-    </div>
+    <section id="about">
+        <h2>About</h2>
+        <p>I'm a third-year Bachelor of Computing Science student with an option in Security. My interests include ethical hacking, penetration testing, and analyzing security threats to develop effective countermeasures.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>(To be updated later)</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>(To be updated later)</p>
+    </section>
+
+    <section id="work">
+        <h2>Work</h2>
+        <p>(To be updated later)</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 </body>
 </html>

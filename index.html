@@ -11,7 +11,7 @@
             padding: 0;
             background: url('https://raw.githubusercontent.com/Mirwais-Morrady/My_Portfolio/main/background.jpg') no-repeat center center fixed;
             background-size: cover;
-            color: #fff;
+            color: black;
         }
         .container {
             width: 80%;
@@ -20,28 +20,33 @@
         }
         .header {
             display: flex;
+            flex-direction: column;
             align-items: center;
             padding: 20px;
         }
         .header img {
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            margin-right: 20px;
+            margin-bottom: 10px;
         }
         .header h1 {
-            font-size: 28px;
+            font-size: 32px;
             font-weight: bold;
             font-family: 'Courier New', monospace;
+            text-shadow: 2px 2px 5px gray;
+            transform: perspective(500px) rotateX(10deg);
         }
         .section {
-            width: 50%;
-            margin: 20px auto;
+            width: 45%;
+            margin: 20px;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.3); /* Adjusted transparency */
+            background: rgba(255, 255, 255, 0.6);
             border-radius: 8px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            vertical-align: top;
         }
         .section h2 {
             border-bottom: 2px solid #00ff99;
@@ -53,6 +58,15 @@
         a {
             color: #00ff99;
             text-decoration: none;
+        }
+        .contact {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            font-size: 14px;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -92,13 +106,12 @@
             <h2>Work Experience</h2>
             <p>Include any relevant internships, part-time jobs, or professional experience.</p>
         </div>
-
-        <div class="section">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:22jl75@queensu.ca">22jl75@queensu.ca</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn Profile</a></p>
-            <p>GitHub: <a href="https://github.com/your-username" target="_blank">GitHub Profile</a></p>
-        </div>
+    </div>
+    
+    <div class="contact">
+        <p>Email: <a href="mailto:22jl75@queensu.ca">22jl75@queensu.ca</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/your-username" target="_blank">GitHub Profile</a></p>
     </div>
 </body>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mirwais Morrady - Portfolio</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,7 +23,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 10%;
+            padding: 10px 5%;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             z-index: 1000;
         }
@@ -33,7 +34,7 @@
         nav ul {
             list-style: none;
             display: flex;
-            gap: 20px;
+            gap: 15px;
             margin-left: auto;
         }
         nav ul li {
@@ -42,8 +43,8 @@
         nav ul li a {
             text-decoration: none;
             color: black;
-            font-size: 18px;
-            padding: 5px 10px;
+            font-size: 16px;
+            padding: 5px 8px;
         }
         nav ul li a.active {
             border-bottom: 3px solid blue;
@@ -60,39 +61,10 @@
             text-align: center;
             margin-bottom: 20px;
         }
-        #home {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 100vh;
-        }
-        #home .intro {
-            max-width: 50%;
-            text-align: left;
-        }
-        #home h1 {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
-        #home p {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-        #home button {
-            display: block;
-            margin: 20px auto;
-            padding: 12px 24px;
-            font-size: 18px;
-            background: blue;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 15px;
             margin-top: 20px;
         }
         .social-links a {
@@ -100,13 +72,30 @@
             font-size: 24px;
             color: blue;
         }
-        #home img {
-            width: 300px;
-            border-radius: 50%;
-            background: blue;
-            padding: 20px;
+        .active-link {
+            border-bottom: 3px solid blue;
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let sections = document.querySelectorAll("section");
+            let navLinks = document.querySelectorAll("nav ul li a");
+            window.onscroll = () => {
+                sections.forEach(sec => {
+                    let top = window.scrollY;
+                    let offset = sec.offsetTop - 100;
+                    let height = sec.offsetHeight;
+                    let id = sec.getAttribute("id");
+                    if (top >= offset && top < offset + height) {
+                        navLinks.forEach(links => {
+                            links.classList.remove("active");
+                            document.querySelector("nav ul li a[href*=" + id + "]").classList.add("active");
+                        });
+                    }
+                });
+            };
+        });
+    </script>
 </head>
 <body>
     <nav>
@@ -122,18 +111,15 @@
     </nav>
 
     <section id="home">
-        <div class="intro">
-            <h1>Hi,</h1>
-            <h1>I'm <span style="color:blue">Mirwais Morrady</span></h1>
-            <p>Computing Science Student | Cybersecurity Enthusiast</p>
-            <button>Connect</button>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-            </div>
+        <h1>Hi,</h1>
+        <h1>I'm <span style="color:blue">Mirwais Morrady</span></h1>
+        <p>Computing Science Student | Cybersecurity Enthusiast</p>
+        <button>Connect</button>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
         </div>
-        <img src="https://raw.githubusercontent.com/Mirwais-Morrady/My_Portfolio/main/profile.jpg" alt="Mirwais Morrady">
     </section>
 
     <section id="about">

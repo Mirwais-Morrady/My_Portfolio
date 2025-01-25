@@ -18,7 +18,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 90%;
+            width: 85%;
             background: white;
             display: flex;
             justify-content: space-between;
@@ -101,12 +101,13 @@
             font-size: 24px;
             color: blue;
         }
-        #home img {
-            width: 300px;
-            border-radius: 50%;
-            background: blue;
-            padding: 20px;
-        }
+        #home .profile-img {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    position: relative;
+    left: -20px; /* Moves the image 1 inch (20px) to the left */
+              } 
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function() {

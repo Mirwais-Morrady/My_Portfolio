@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mirwais Morrady - Portfolio</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,18 +22,19 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 3%;
+            padding: 15px 10%;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             z-index: 1000;
         }
         nav .logo {
-            font-size: 22px;
+            font-size: 24px;
             font-weight: bold;
         }
         nav ul {
             list-style: none;
             display: flex;
-            gap: 10px;
+            gap: 20px;
+            margin-left: auto;
         }
         nav ul li {
             display: inline;
@@ -42,8 +42,8 @@
         nav ul li a {
             text-decoration: none;
             color: black;
-            font-size: 14px;
-            padding: 5px 8px;
+            font-size: 18px;
+            padding: 5px 10px;
         }
         nav ul li a.active {
             border-bottom: 3px solid blue;
@@ -57,26 +57,30 @@
             font-size: 32px;
             color: blue;
             font-weight: bold;
+            text-align: center;
             margin-bottom: 20px;
         }
-        .intro {
+        #home {
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
+            height: 100vh;
         }
-        .intro-text {
+        #home .intro {
             max-width: 50%;
             text-align: left;
         }
-        .intro-text h1 {
-            font-size: 48px;
+        #home h1 {
+            font-size: 40px;
             margin-bottom: 10px;
         }
-        .intro-text p {
+        #home p {
             font-size: 20px;
             margin-bottom: 20px;
         }
-        .intro-text button {
+        #home button {
+            display: block;
+            margin: 20px auto;
             padding: 12px 24px;
             font-size: 18px;
             background: blue;
@@ -87,7 +91,8 @@
         }
         .social-links {
             display: flex;
-            gap: 15px;
+            justify-content: center;
+            gap: 20px;
             margin-top: 20px;
         }
         .social-links a {
@@ -95,11 +100,11 @@
             font-size: 24px;
             color: blue;
         }
-        .profile-img {
+        #home img {
             width: 300px;
-            height: 300px;
             border-radius: 50%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            background: blue;
+            padding: 20px;
         }
     </style>
 </head>
@@ -116,8 +121,8 @@
         </ul>
     </nav>
 
-    <section id="home" class="intro">
-        <div class="intro-text">
+    <section id="home">
+        <div class="intro">
             <h1>Hi,</h1>
             <h1>I'm <span style="color:blue">Mirwais Morrady</span></h1>
             <p>Computing Science Student | Cybersecurity Enthusiast</p>
@@ -128,7 +133,7 @@
                 <a href="#"><i class="fab fa-facebook"></i></a>
             </div>
         </div>
-        <img class="profile-img" src="https://raw.githubusercontent.com/Mirwais-Morrady/My_Portfolio/main/profile.jpg" alt="Mirwais Morrady">
+        <img src="https://raw.githubusercontent.com/Mirwais-Morrady/My_Portfolio/main/profile.jpg" alt="Mirwais Morrady">
     </section>
 
     <section id="about">

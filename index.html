@@ -102,13 +102,14 @@
             color: blue;
         }
         .profile-img {
-    width: 600px;  /* Doubled from 300px */
-    height: 700px; /* Doubled from 350px */
-    object-fit: cover;
-    clip-path: ellipse(50% 45%); /* Adjusted ellipse to maintain proportions */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Slightly increased shadow */
+    width: 600px;  /* Keeping the doubled size */
+    height: 700px; /* Keeping the doubled size */
+    object-fit: contain; /* Ensures the whole image fits inside */
+    clip-path: ellipse(48% 42%); /* Slightly adjusted to prevent hair cutting */
+    background: white; /* Adds a subtle background for better visibility */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); /* Stronger shadow for depth */
+    padding: 10px; /* Adds space between the image and clip */
        }
-
 
     </style>
     <script>

@@ -101,13 +101,13 @@
             font-size: 24px;
             color: blue;
         }
-        #home .profile-img {
+        .profile-img {
     width: 300px;
     height: 350px;
     object-fit: cover;
-    clip-path: path("M75 0 Q150 50 225 0 T375 0 L375 375 Q150 350 75 375 Z");
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-              }
+        }
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function() {

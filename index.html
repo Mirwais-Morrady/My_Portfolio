@@ -51,22 +51,32 @@
         section {
             padding: 80px 10%;
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 32px;
+            color: blue;
+            font-weight: bold;
+            margin-bottom: 20px;
         }
         .intro {
-            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        .intro h1 {
+        .intro-text {
+            max-width: 50%;
+            text-align: left;
+        }
+        .intro-text h1 {
             font-size: 48px;
             margin-bottom: 10px;
         }
-        .intro p {
+        .intro-text p {
             font-size: 20px;
             margin-bottom: 20px;
         }
-        .intro button {
+        .intro-text button {
             padding: 12px 24px;
             font-size: 18px;
             background: blue;
@@ -106,8 +116,8 @@
         </ul>
     </nav>
 
-    <section id="home">
-        <div class="intro">
+    <section id="home" class="intro">
+        <div class="intro-text">
             <h1>Hi,</h1>
             <h1>I'm <span style="color:blue">Mirwais Morrady</span></h1>
             <p>Computing Science Student | Cybersecurity Enthusiast</p>
@@ -119,6 +129,36 @@
             </div>
         </div>
         <img class="profile-img" src="https://raw.githubusercontent.com/Mirwais-Morrady/My_Portfolio/main/profile.jpg" alt="Mirwais Morrady">
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>I'm a third-year Bachelor of Computing Science student with an option in Security. My interests include ethical hacking, penetration testing, and analyzing security threats to develop effective countermeasures.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>(To be updated later)</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>(To be updated later)</p>
+    </section>
+
+    <section id="work">
+        <h2>Work</h2>
+        <p>(To be updated later)</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
 </body>
 </html>

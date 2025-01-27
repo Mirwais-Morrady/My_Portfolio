@@ -102,17 +102,41 @@
             color: blue;
         }
         .profile-img {
-    width: 550px;  /* Adjusted to a smaller size */
-    height: 650px; /* Adjusted height to ensure hair is not cut */
-    object-fit: cover; /* Ensures full image fits inside */
-    clip-path: ellipse(50% 45% at 50% 50%); /* Adjusted ellipse to prevent cutting */
-    background: white; /* Optional background for clarity */
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); /* Added a soft shadow */
-    padding: 10px; /* Extra spacing around the clipped shape */
-    display: block;
-}
+            width: 550px;
+            height: 650px;
+            object-fit: cover;
+            clip-path: ellipse(50% 45% at 50% 50%);
+            background: white;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+            padding: 10px;
+            display: block;
+        }
 
-
+        /* ===== New styles for About section ===== */
+        .about-container {
+            display: flex; 
+            align-items: flex-start; 
+            justify-content: center;
+            flex-wrap: wrap; /* ensures good wrapping on smaller screens */
+            gap: 20px; 
+            text-align: left; 
+        }
+        .about-img {
+            width: 300px; 
+            height: auto; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .about-text {
+            flex: 1; 
+            max-width: 700px; 
+            margin: 0 auto;
+        }
+        .about-text p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        /* ===== End of new styles for About section ===== */
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -163,10 +187,25 @@
         <img class="profile-img" src="https://raw.githubusercontent.com/Mirwais-Morrady/My_Portfolio/main/profile.jpg" alt="Mirwais Morrady">
     </section>
 
+    <!-- Updated About Section -->
     <section id="about">
         <h2>About</h2>
-        <p>I'm a third-year Bachelor of Computing Science student with an option in Security. My interests include ethical hacking, penetration testing, and analyzing security threats to develop effective countermeasures.</p>
+        <div class="about-container">
+            <img class="about-img" 
+                 src="https://raw.githubusercontent.com/Mirwais-Morrady/My_Portfolio/main/profile.jpg" 
+                 alt="Mirwais Morrady - About Photo">
+            <div class="about-text">
+                <p>Hello! I’m <strong>Mirwais Morrady</strong>, a third-year Computing Science student at Queen’s University, with an option in Security. Originally from Afghanistan, I pursued Civil Engineering in China for two years on a competitive scholarship before transitioning to Canada through the WUSC’s SRP program, which sponsored me for permanent residency and to complete my bachelor’s degree at Queen’s University. Overcoming challenges and thriving under pressure have shaped me into a dedicated, resilient individual who loves tackling complex problems head-on.</p>
+                
+                <p>I’m particularly passionate about <strong>ethical hacking</strong>, <strong>penetration testing</strong>, and <strong>software development</strong>. My diverse background—from working with Chinese companies in Pakistan to studying in multiple countries—has given me the opportunity to collaborate with people from various cultures and industries. Along the way, I’ve honed strong critical thinking, problem-solving, and communication skills in six languages: Dari, Pashto, English, Mandarin, Urdu, and Hindi.</p>
+                
+                <p>Outside the classroom, I enjoy <strong>bodybuilding</strong>, staying on top of <strong>cutting-edge technologies</strong>, and exploring the world of <strong>cryptocurrency</strong>. My international experience and focus on customer service have enabled me to adapt quickly, work independently, and bring a multicultural perspective to any team or project I join.</p>
+                
+                <p>I’m currently seeking <strong>internship opportunities</strong> in cybersecurity, ethical hacking, or software development. If you’re looking for a motivated, versatile individual to support your team, I’d love to connect and discuss how I can contribute to your organization. Feel free to reach out via email—I’m excited to learn, collaborate, and drive meaningful results!</p>
+            </div>
+        </div>
     </section>
+    <!-- End of About Section -->
 
     <section id="skills">
         <h2>Skills</h2>

@@ -59,10 +59,10 @@
 
         .logo {
             font-family: 'Orbitron', monospace;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 700;
             color: var(--accent-cyan);
-            letter-spacing: 3px;
+            letter-spacing: 1px;
             text-shadow: var(--glow-cyan);
         }
 
@@ -141,16 +141,6 @@
 
         .hero-text { max-width: 56%; }
 
-        .hero-greeting {
-            font-family: 'JetBrains Mono', monospace;
-            color: var(--accent-green);
-            font-size: 14px;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .hero-greeting::before { content: '> '; color: var(--accent-cyan); }
 
         .hero-name {
             font-family: 'Orbitron', monospace;
@@ -836,16 +826,15 @@
 <!-- HOME -->
 <section id="home">
     <div class="hero-text">
-        <div class="hero-greeting">init_profile.sh</div>
         <h1 class="hero-name">Mirwais<br>Morrady</h1>
         <div class="hero-typed-line">
             <span id="typed-output"></span><span class="cursor">|</span>
         </div>
         <p class="hero-desc">
-            Computing graduate from Queen's University, specializing in Security. Passionate about cybersecurity, GRC, and building systems people can trust.
+            Computing graduate from Queen's University, with a Security option. Passionate about cybersecurity, GRC, and building systems people can trust.
         </p>
         <div class="hero-buttons">
-            <a href="#contact" class="btn-primary"><i class="fas fa-terminal"></i> Get In Touch</a>
+            <a href="#contact" class="btn-primary">Get In Touch</a>
             <a href="resume.pdf" download class="btn-outline"><i class="fas fa-download"></i> Download CV</a>
         </div>
         <div class="hero-socials">
@@ -888,20 +877,20 @@
             </div>
         </div>
         <div class="about-text">
-            <p>I grew up in Afghanistan — a place that teaches you early that the ground can shift under your feet, and that how you respond to that defines you. I spent two years in China studying Civil Engineering on a competitive scholarship before making my way to Canada through WUSC's Student Refugee Program, which sponsored me to complete my <strong>Bachelor of Computing (Honours) at Queen's University</strong>, with a specialization in Security.</p>
+            <p>I grew up in Afghanistan, a place that teaches you early that the ground can shift under your feet, and that how you respond to that defines you. I spent two years in China studying Civil Engineering on a competitive scholarship before making my way to Canada through WUSC's Student Refugee Program, which sponsored me to complete my <strong>Bachelor of Computing (Honours) at Queen's University</strong>, with a Security option.</p>
 
             <p>That's a lot of countries, a lot of starting over, a lot of figuring things out from scratch. Honestly, I think it's the best training I could have gotten.</p>
 
-            <p>At Queen's, I gravitated toward cybersecurity not just because of the technical challenge — though the challenge is real — but because of what's at stake. Security is about protecting people. It's about the gap between what systems promise and what they actually deliver, and making sure that gap doesn't become someone's worst day. I'm actively working toward my <strong>Security+</strong> and <strong>Network+</strong> certifications, and I'm particularly drawn to <strong>GRC roles</strong> and the cybersecurity analyst track.</p>
+            <p>At Queen's, I gravitated toward cybersecurity not just because of the technical challenge, though the challenge is real, but because of what's at stake. Security is about protecting people. It's about the gap between what systems promise and what they actually deliver, and making sure that gap doesn't become someone's worst day. I'm actively working toward my <strong>Security+</strong> and <strong>Network+</strong> certifications, and I'm particularly drawn to <strong>GRC roles</strong> and the cybersecurity analyst track.</p>
 
-            <p>I speak six languages — <strong>English, Mandarin, Farsi, Urdu, Pashto, and Hindi</strong>. That's less of a party trick and more the result of spending my life building bridges between worlds that don't always talk to each other. That same instinct carries into how I communicate across technical and non-technical settings.</p>
+            <p>I speak six languages: <strong>English, Mandarin, Farsi, Urdu, Pashto, and Hindi</strong>. That's less of a party trick and more the result of spending my life building bridges between worlds that don't always talk to each other. That same instinct carries into how I communicate across technical and non-technical settings.</p>
 
-            <p>Outside of work, I train seriously — bodybuilding keeps me structured and honest — and I follow the security landscape closely enough to have opinions. If you're building a team that values <strong>resilience, adaptability, and someone who genuinely cares about the work</strong>, I'd love to talk.</p>
+            <p>Outside of work, I train seriously; bodybuilding keeps me structured and honest, and I follow the security landscape closely enough to have opinions. If you're building a team that values <strong>resilience, adaptability, and someone who genuinely cares about the work</strong>, I'd love to talk.</p>
 
             <div class="about-info-grid">
                 <div class="info-item"><i class="fas fa-graduation-cap"></i> Queen's University, 2026</div>
                 <div class="info-item"><i class="fas fa-map-marker-alt"></i> Kingston, ON, Canada</div>
-                <div class="info-item"><i class="fas fa-shield-alt"></i> Security Specialization</div>
+                <div class="info-item"><i class="fas fa-shield-alt"></i> Computing, Security Option</div>
                 <div class="info-item"><i class="fas fa-globe"></i> 6 Languages Spoken</div>
                 <div class="info-item"><i class="fas fa-briefcase"></i> Open to Opportunities</div>
                 <div class="info-item"><i class="fas fa-envelope"></i> waissarfaraz123@gmail.com</div>
@@ -921,13 +910,31 @@
                 <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
                 <div class="skill-cat-title">Programming Languages</div>
             </div>
-            <div class="skill-tags">
-                <span class="skill-tag cyan">Python</span>
-                <span class="skill-tag cyan">Java</span>
-                <span class="skill-tag cyan">C</span>
-                <span class="skill-tag cyan">Haskell</span>
-                <span class="skill-tag cyan">Prolog</span>
-                <span class="skill-tag cyan">HTML / CSS</span>
+            <div class="cert-items">
+                <div class="cert-item">
+                    <span class="cert-name"><i class="fas fa-terminal" style="margin-right:7px;color:var(--accent-cyan)"></i>Python</span>
+                    <span class="cert-badge completed">Proficient</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-name"><i class="fas fa-terminal" style="margin-right:7px;color:var(--accent-cyan)"></i>Java</span>
+                    <span class="cert-badge completed">Proficient</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-name"><i class="fas fa-terminal" style="margin-right:7px;color:var(--accent-cyan)"></i>C</span>
+                    <span class="cert-badge completed">Proficient</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-name"><i class="fas fa-terminal" style="margin-right:7px;color:var(--accent-cyan)"></i>Haskell</span>
+                    <span class="cert-badge completed">Proficient</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-name"><i class="fas fa-terminal" style="margin-right:7px;color:var(--accent-cyan)"></i>Prolog</span>
+                    <span class="cert-badge completed">Proficient</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-name"><i class="fas fa-terminal" style="margin-right:7px;color:var(--accent-cyan)"></i>HTML / CSS</span>
+                    <span class="cert-badge completed">Proficient</span>
+                </div>
             </div>
         </div>
 
@@ -946,7 +953,7 @@
                     <span class="cert-badge in-progress">In Progress</span>
                 </div>
                 <div class="cert-item">
-                    <span class="cert-name"><i class="fas fa-check-circle" style="margin-right:7px;color:var(--accent-green)"></i>Queen's Computing — Security Option</span>
+                    <span class="cert-name"><i class="fas fa-check-circle" style="margin-right:7px;color:var(--accent-green)"></i>Queen's Computing, Security Option</span>
                     <span class="cert-badge completed">Completed</span>
                 </div>
             </div>
@@ -971,6 +978,10 @@
                 <span class="skill-tag purple">Outlook</span>
                 <span class="skill-tag purple">Microsoft Teams</span>
                 <span class="skill-tag purple">Database Systems</span>
+                <span class="skill-tag purple">Wireshark</span>
+                <span class="skill-tag purple">ChatGPT</span>
+                <span class="skill-tag purple">GitHub Copilot</span>
+                <span class="skill-tag purple">Claude AI</span>
                 <span class="skill-tag purple">Professional Writing</span>
             </div>
         </div>
@@ -990,6 +1001,7 @@
             </div>
             <div class="skill-tags">
                 <span class="skill-tag cyan">Team Leadership</span>
+                <span class="skill-tag cyan">Teamwork</span>
                 <span class="skill-tag cyan">Staff Training</span>
                 <span class="skill-tag cyan">Customer Service</span>
                 <span class="skill-tag cyan">Cross-Cultural Communication</span>
@@ -1009,7 +1021,7 @@
             <div class="project-icon"><i class="fas fa-user-shield"></i></div>
             <h3 class="project-title">SecureShare</h3>
             <p class="project-desc">
-                A secure file-sharing system developed for CISC 468 — Security and Privacy at Queen's University. Built around core security principles including end-to-end encryption and access control, enabling safe document transmission between authenticated users while maintaining confidentiality, integrity, and availability.
+                A secure file-sharing system developed for CISC 468: Security and Privacy at Queen's University. Built around core security principles including end-to-end encryption and access control, enabling safe document transmission between authenticated users while maintaining confidentiality, integrity, and availability.
             </p>
             <div class="project-tags">
                 <span class="project-tag">Security</span>
@@ -1029,7 +1041,7 @@
             <div class="project-icon"><i class="fas fa-chalkboard-teacher"></i></div>
             <h3 class="project-title">TA Management System</h3>
             <p class="project-desc">
-                A full-stack group project designed to streamline Teaching Assistant assignment and course management within a university setting. The system handles scheduling, applicant tracking, and administrative workflows — reducing manual overhead and improving coordination across departments.
+                A full-stack group project designed to streamline Teaching Assistant assignment and course management within a university setting. The system handles scheduling, applicant tracking, and administrative workflows, reducing manual overhead and improving coordination across departments.
             </p>
             <div class="project-tags">
                 <span class="project-tag">Full Stack</span>
@@ -1057,9 +1069,9 @@
         <div class="timeline-item">
             <div class="timeline-dot"><i class="fas fa-building"></i></div>
             <div class="timeline-content">
-                <div class="timeline-period">May 2023 &mdash; Present &nbsp;&bull;&nbsp; Part-Time &amp; Full-Time</div>
+                <div class="timeline-period">May 2023 to Present &nbsp;&bull;&nbsp; Part-Time &amp; Full-Time</div>
                 <div class="timeline-title">Front Desk Representative</div>
-                <div class="timeline-company">Queen's University — Residence Life &amp; Services &nbsp;|&nbsp; Kingston, ON</div>
+                <div class="timeline-company">Queen's University, Residence Life &amp; Services &nbsp;|&nbsp; Kingston, ON</div>
                 <div class="timeline-desc">
                     Managed end-to-end guest check-in and checkout for leisure guests, conference groups, and VIP arrivals across all four campus front desks. Handled 50–100 daily emails, produced shift reports in Microsoft Teams, and became the team's go-to expert for summer hotel operations over three seasons. Trained multiple cohorts of new hires, supported students in distress by connecting them to campus mental health resources, and maintained accurate records across housing databases.
                 </div>
@@ -1077,8 +1089,8 @@
         <div class="timeline-item">
             <div class="timeline-dot"><i class="fas fa-store"></i></div>
             <div class="timeline-content">
-                <div class="timeline-period">February 2023 &mdash; May 2025 &nbsp;&bull;&nbsp; Part-Time</div>
-                <div class="timeline-title">Sales Associate — Seasonal Department</div>
+                <div class="timeline-period">February 2023 to May 2025 &nbsp;&bull;&nbsp; Part-Time</div>
+                <div class="timeline-title">Sales Associate, Seasonal Department</div>
                 <div class="timeline-company">The Home Depot &nbsp;|&nbsp; Kingston, ON</div>
                 <div class="timeline-desc">
                     Delivered proactive, needs-first customer service on one of Kingston's highest-traffic retail floors. Licensed and operated order picker, reach truck, and sit-down forklift for over a year, moving freight safely in a warehouse environment. Built lasting relationships with repeat customers and maintained a consistent safety-first approach in compliance with all Home Depot protocols.
@@ -1097,11 +1109,11 @@
         <div class="timeline-item">
             <div class="timeline-dot"><i class="fas fa-users-cog"></i></div>
             <div class="timeline-content">
-                <div class="timeline-period">January 2022 &mdash; September 2022 &nbsp;&bull;&nbsp; Full-Time</div>
+                <div class="timeline-period">January 2022 to September 2022 &nbsp;&bull;&nbsp; Full-Time</div>
                 <div class="timeline-title">Assistant Manager</div>
                 <div class="timeline-company">Brother to Heart Cleaning Ltd &nbsp;|&nbsp; Islamabad, Pakistan</div>
                 <div class="timeline-desc">
-                    Held full operational responsibility for a team of 10 — managing daily scheduling, payroll, task delegation, and performance standards. Served as the primary client escalation point and implemented targeted improvements to communication and quality checks, resulting in a <strong style="color:var(--accent-green)">20% increase in client retention within 6 months</strong>.
+                    Held full operational responsibility for a team of 10, managing daily scheduling, payroll, task delegation, and performance standards. Served as the primary client escalation point and implemented targeted improvements to communication and quality checks, resulting in a <strong style="color:var(--accent-green)">20% increase in client retention within 6 months</strong>.
                 </div>
                 <div class="timeline-skills">
                     <span class="timeline-skill">Team Leadership</span>
@@ -1124,7 +1136,7 @@
     <div class="contact-wrapper">
         <div class="contact-info">
             <h3>Let's Connect</h3>
-            <p>Whether you have a job opportunity, a project, or just want to connect — my inbox is always open. I'm actively looking for roles in cybersecurity and computing.</p>
+            <p>Whether you have a job opportunity, a project, or just want to connect; my inbox is always open. I'm actively looking for roles in cybersecurity and computing.</p>
 
             <div class="contact-items">
                 <div class="contact-item">
@@ -1177,7 +1189,7 @@
         <form class="contact-form"
               action="https://formsubmit.co/waissarfaraz123@gmail.com"
               method="POST">
-            <input type="hidden" name="_subject" value="Portfolio Contact — New Message">
+            <input type="hidden" name="_subject" value="Portfolio Contact: New Message">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
             <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
